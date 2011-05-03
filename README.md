@@ -1,7 +1,7 @@
 # Simple API Key Authentication
 
 A Rack middleware and Railtie(for Rails3) for API key authentication.
-It will authenticate all requests to /api/* or /apis/*
+It will authenticate all requests to /api/*
   
 ## Usage
 
