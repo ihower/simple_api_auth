@@ -21,7 +21,7 @@ describe SimpleApiAuth do
       
       it "should pass if request is authorized by header" do
         
-        response = Rack::MockRequest.new(app).get('/api/test', "Authorization" => "abc" )
+        response = Rack::MockRequest.new(app).get('/api/test', "HTTP_AUTHORIZATION" => "abc" )
         response.status.should == 200
       end
             
