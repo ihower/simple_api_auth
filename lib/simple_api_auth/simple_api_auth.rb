@@ -16,7 +16,7 @@ module SimpleApiAuth
     def call(env)
       path  = env['PATH_INFO']
       if path =~ @@api_path_matcher
-        api_key = env["Authorization"] || Rack::Request.new(env).params['api_key']      
+        api_key = env["HTTP_AUTHORIZATION"] || Rack::Request.new(env).params['api_key']      
         unless api_key == @@api_key
           return @@unauthorized_response
         end

@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "simple_api_auth"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Wen-Tien Chang"]
   s.email       = ["ihower@gmail.com"]
