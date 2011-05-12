@@ -3,7 +3,7 @@ module SimpleApiAuth
   class Middleware
     
     @@api_path_matcher = /^\/api\//
-    @@unauthorized_response = [401, {"Content-Type" => "text/plain"}, ["Unauthorized."]]
+    @@unauthorized_response = [401, {"Content-Type" => "text/plain"}, ['{ "message": "Unauthenticated." }']]
     
     def self.api_key=(key)
       @@api_key = key

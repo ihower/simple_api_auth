@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "simple_api_auth"
-  s.version     = "0.0.2"
+  s.version     = "0.0.3"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Wen-Tien Chang"]
   s.email       = ["ihower@gmail.com"]
@@ -17,4 +17,5 @@ Gem::Specification.new do |s|
   
   s.add_dependency "rack"
   s.add_development_dependency "rspec", "~> 2.5"
+  s.add_development_dependency "json"
 end

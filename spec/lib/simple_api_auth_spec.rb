@@ -33,6 +33,7 @@ describe SimpleApiAuth do
       it "should return 401 if request is unauthorized" do
         response = Rack::MockRequest.new(app).get('/api/test')
         response.status.should == 401
+        JSON.parse(response.body).should == { "message" => "Unauthenticated." }
       end
     end
     
