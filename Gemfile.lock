@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simple_api_auth (0.0.2)
+    simple_api_auth (0.0.5)
       rack
 
 GEM
@@ -9,7 +9,7 @@ GEM
   specs:
     diff-lcs (1.1.2)
     json (1.5.1)
-    rack (1.2.2)
+    rack (1.4.1)
     rspec (2.5.0)
       rspec-core (~> 2.5.0)
       rspec-expectations (~> 2.5.0)
